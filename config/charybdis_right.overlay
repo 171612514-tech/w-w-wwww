@@ -42,4 +42,5 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
     };
+
 };
