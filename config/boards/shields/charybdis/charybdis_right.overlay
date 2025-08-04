@@ -7,7 +7,7 @@
 #include "charybdis.dtsi"
 
 &default_transform {
-	col-offset = <6>;
+	col-offset = <7>;
 };
 /*
 &five_column_transform {
@@ -16,12 +16,16 @@
  */
 &kscan0 {
 	col-gpios
-		= <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-		, <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-		, <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-		, <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-		, <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-		, <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+		= <&gpio0 9  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+		, <&gpio0 31  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+		, <&gpio0 29  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+		, <&gpio0 2  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+		, <&gpio1 15  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+		, <&gpio0 1  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+		, <&gpio1 1  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+		, <&gpio1 2  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+		, <&gpio1 7  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 		;
 
 };
+
